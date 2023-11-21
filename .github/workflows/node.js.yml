@@ -23,6 +23,7 @@ jobs:
       - run: npm run build
       - run: docker-compose build
       - run: npm test
+      - run: npm run lint:boundaries
       - run: docker-compose run integration
       - run: docker-compose down
 
